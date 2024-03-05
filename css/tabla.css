@@ -31,9 +31,9 @@ table.cobertura_table {
   outline-offset: 0px;
 }
 table.cobertura_table td {
-  /* border: 1px solid #D5D5D5; */
-  padding: 0px 5px;
-  border: 0;
+  border: 1px solid #D5D5D5;
+  padding: 0px 0px;
+  
 }
 table.cobertura_table th {
   border-right: 1px solid #9f4e993d;
@@ -167,6 +167,13 @@ table.cobertura_table a:hover {
   text-decoration: underline;
 }
 
+
+table.cobertura_table a > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #myTable td.sorting_1 {
   background: bisque;
