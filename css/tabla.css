@@ -205,8 +205,8 @@ background: none;
 
 table {
   border-radius: 15px;
-  outline: 5px solid #917089;
-  outline-offset: -5px;
+  outline: 3px solid #917089;
+  outline-offset: 2px;
   overflow: hidden;
 }
 

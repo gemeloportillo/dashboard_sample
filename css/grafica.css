@@ -18,3 +18,9 @@
   text-align: center;
   padding: 10px 0;
 }
+
+.grafica_table img {
+  width: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
