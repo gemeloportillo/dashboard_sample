@@ -1,0 +1,20 @@
+.vertical {
+  text-align: right;
+  vertical-align: center;
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+  font-size: 11px;
+}
+
+.grafica_table img {
+  width: 15px;
+}
+
+.grafica_table td {
+  font-size: 11px;
+}
+
+.grafica_table td.enca {
+  text-align: center;
+  padding: 10px 0;
+}
