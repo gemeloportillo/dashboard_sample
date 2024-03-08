@@ -19,19 +19,19 @@ table.cobertura_table {
   font-family: "muli", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: .8em;
+  font-size: .75em;
 }
 
 
 table.cobertura_table {
-  border: 6px solid #6d416269;
+  border: 0px solid #6d416269;
   text-align: center;
   border-collapse: collapse;
   overflow: visible;
   outline-offset: 0px;
 }
 table.cobertura_table td {
-  border: 1px solid #D5D5D5;
+  border: 0px solid #D5D5D5;
   padding: 0px 0px;
   
 }
@@ -205,6 +205,84 @@ background: none;
 
 
 
+/* COLORES TABLA Columma S3 */
+table.cobertura_table thead tr:first-child th:nth-child(5),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(4),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(5) ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(6)  {
+  background: #9185d8;
+}
+
+table.cobertura_table tbody td:nth-of-type(5),
+table.cobertura_table tbody td:nth-of-type(6),
+table.cobertura_table tbody td:nth-of-type(7),
+
+table.cobertura_table tbody th:nth-child(5),
+table.cobertura_table tbody th:nth-child(6),
+table.cobertura_table tbody th:nth-child(7) {
+  background: #cec6fc;
+}
+
+/* COLORES TABLA Columma Estatal */
+table.cobertura_table thead tr:first-child th:nth-child(18),
+
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(19),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(20),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(21),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(22) ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(23),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(24),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(25) ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(26)  {
+  background: #b178ad;
+}
+
+table.cobertura_table tbody td:nth-of-type(20),
+table.cobertura_table tbody td:nth-of-type(21),
+table.cobertura_table tbody td:nth-of-type(22),
+table.cobertura_table tbody td:nth-of-type(23),
+table.cobertura_table tbody td:nth-of-type(24),
+table.cobertura_table tbody td:nth-of-type(25),
+table.cobertura_table tbody td:nth-of-type(26),
+table.cobertura_table tbody td:nth-of-type(27),
+
+table.cobertura_table tbody th:nth-child(20),
+table.cobertura_table tbody th:nth-child(21),
+table.cobertura_table tbody th:nth-child(22),
+table.cobertura_table tbody th:nth-child(23),
+table.cobertura_table tbody th:nth-child(24),
+table.cobertura_table tbody th:nth-child(25),
+table.cobertura_table tbody th:nth-child(26),
+table.cobertura_table tbody th:nth-child(27)
+ {
+  background: #ffe8fd;
+}
+
+/* COLORES TABLA Columma Municipal */
+table.cobertura_table thead tr:first-child th:nth-child(19),
+
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(27),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(28),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(29),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(30)   
+{
+  background: #569b75;
+}
+
+
+table.cobertura_table tbody td:nth-of-type(28),
+table.cobertura_table tbody td:nth-of-type(29),
+table.cobertura_table tbody td:nth-of-type(30),
+table.cobertura_table tbody td:nth-of-type(31),
+
+table.cobertura_table tbody th:nth-child(28),
+table.cobertura_table tbody th:nth-child(29),
+table.cobertura_table tbody th:nth-child(30),
+table.cobertura_table tbody th:nth-child(31)
+{
+  background: #aff5cf;
+}
+
 
 
 
@@ -212,7 +290,7 @@ background: none;
 
 table {
   border-radius: 15px;
-  outline: 3px solid #917089;
+  outline: 0px solid #917089;
   outline-offset: 2px;
   overflow: hidden;
 }
