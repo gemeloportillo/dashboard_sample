@@ -1,0 +1,167 @@
+
+
+/* COLORES TABLA Columma S3 */
+table.cobertura_table thead tr:first-child th:nth-child(5),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(4),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(5) ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(6)  {
+  background: #ebe8fc;
+  display: none;
+
+}
+
+table.cobertura_table tbody td:nth-of-type(5),
+table.cobertura_table tbody td:nth-of-type(6),
+table.cobertura_table tbody td:nth-of-type(7),
+
+table.cobertura_table tbody th:nth-child(5),
+table.cobertura_table tbody th:nth-child(6),
+table.cobertura_table tbody th:nth-child(7) {
+  background: #dcd6ff;
+  display: none;
+}
+
+/* COLORES TABLA Columma Estatal */
+table.cobertura_table thead tr:first-child th:nth-child(18),
+
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(19),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(20),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(21),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(22) ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(23),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(24),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(25) ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(26)  {
+  background: #faedf9;
+}
+
+table.cobertura_table tbody td:nth-of-type(20),
+table.cobertura_table tbody td:nth-of-type(21),
+table.cobertura_table tbody td:nth-of-type(22),
+table.cobertura_table tbody td:nth-of-type(23),
+table.cobertura_table tbody td:nth-of-type(24),
+table.cobertura_table tbody td:nth-of-type(25),
+table.cobertura_table tbody td:nth-of-type(26),
+table.cobertura_table tbody td:nth-of-type(27),
+
+table.cobertura_table tbody th:nth-child(20),
+table.cobertura_table tbody th:nth-child(21),
+table.cobertura_table tbody th:nth-child(22),
+table.cobertura_table tbody th:nth-child(23),
+table.cobertura_table tbody th:nth-child(24),
+table.cobertura_table tbody th:nth-child(25),
+table.cobertura_table tbody th:nth-child(26),
+table.cobertura_table tbody th:nth-child(27)
+ {
+  background: #ffe8fd;
+}
+
+/* COLORES TABLA Columma Municipal */
+table.cobertura_table thead tr:first-child th:nth-child(19),
+
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(27),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(28),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(29),
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(30)   
+{
+  background: #f0fdf6;
+}
+
+
+table.cobertura_table tbody td:nth-of-type(28),
+table.cobertura_table tbody td:nth-of-type(29),
+table.cobertura_table tbody td:nth-of-type(30),
+table.cobertura_table tbody td:nth-of-type(31),
+
+table.cobertura_table tbody th:nth-child(28),
+table.cobertura_table tbody th:nth-child(29),
+table.cobertura_table tbody th:nth-child(30),
+table.cobertura_table tbody th:nth-child(31)
+{
+  background: #e7e6ce;
+}
+
+
+
+/***********************************   HOVER  ******************************/
+
+
+/* COLORES TABLA Columma S3 */
+table.cobertura_table thead tr:first-child th:nth-child(5):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(4):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(5):hover ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(6):hover  {
+  background: #917089;
+
+}
+
+table.cobertura_table tbody td:nth-of-type(5):hover,
+table.cobertura_table tbody td:nth-of-type(6):hover,
+table.cobertura_table tbody td:nth-of-type(7):hover,
+
+table.cobertura_table tbody th:nth-child(5):hover,
+table.cobertura_table tbody th:nth-child(6):hover,
+table.cobertura_table tbody th:nth-child(7):hover {
+  background: #917089;
+
+}
+
+/* COLORES TABLA Columma Estatal */
+table.cobertura_table thead tr:first-child th:nth-child(18):hover,
+
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(19):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(20):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(21):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(22):hover ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(23):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(24):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(25):hover ,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(26):hover  {
+  background: #917089;
+}
+
+table.cobertura_table tbody td:nth-of-type(20):hover,
+table.cobertura_table tbody td:nth-of-type(21):hover,
+table.cobertura_table tbody td:nth-of-type(22):hover,
+table.cobertura_table tbody td:nth-of-type(23):hover,
+table.cobertura_table tbody td:nth-of-type(24):hover,
+table.cobertura_table tbody td:nth-of-type(25):hover,
+table.cobertura_table tbody td:nth-of-type(26):hover,
+table.cobertura_table tbody td:nth-of-type(27):hover,
+
+table.cobertura_table tbody th:nth-child(20):hover,
+table.cobertura_table tbody th:nth-child(21):hover,
+table.cobertura_table tbody th:nth-child(22):hover,
+table.cobertura_table tbody th:nth-child(23):hover,
+table.cobertura_table tbody th:nth-child(24):hover,
+table.cobertura_table tbody th:nth-child(25):hover,
+table.cobertura_table tbody th:nth-child(26):hover,
+table.cobertura_table tbody th:nth-child(27):hover
+ {
+  background: #917089;
+}
+
+/* COLORES TABLA Columma Municipal */
+table.cobertura_table thead tr:first-child th:nth-child(19):hover,
+
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(27):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(28):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(29):hover,
+table.cobertura_table thead tr:nth-of-type(2) th:nth-child(30):hover   
+{
+  background: #917089;
+}
+
+
+table.cobertura_table tbody td:nth-of-type(28):hover,
+table.cobertura_table tbody td:nth-of-type(29):hover,
+table.cobertura_table tbody td:nth-of-type(30):hover,
+table.cobertura_table tbody td:nth-of-type(31):hover,
+
+table.cobertura_table tbody th:nth-child(28):hover,
+table.cobertura_table tbody th:nth-child(29):hover,
+table.cobertura_table tbody th:nth-child(30):hover,
+table.cobertura_table tbody th:nth-child(31):hover
+{
+  background: #917089;
+}

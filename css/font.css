@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "pdn";
+  src:url("../fonts/pdn.eot");
+  src:url("../fonts/pdn.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/pdn.woff") format("woff"),
+    url("../fonts/pdn.ttf") format("truetype"),
+    url("../fonts/pdn.svg#pdn") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "pdn" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ico-"]:before,
+[class*=" ico-"]:before {
+  font-family: "pdn" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-j-porcentaje:before {
+  content: "\61";
+}
+.ico-em-porcentaje:before {
+  content: "\62";
+}
+.ico-0con-porcentaje:before {
+  content: "\63";
+}
+.ico-1con:before {
+  content: "\64";
+}
+.ico-1con-porcentaje:before {
+  content: "\65";
+}
+.ico-2con:before {
+  content: "\66";
+}
+.ico-2con-porcentaje:before {
+  content: "\67";
+}
+.ico-3con:before {
+  content: "\68";
+}
+.ico-3con-porcentaje:before {
+  content: "\69";
+}
+.ico-a:before {
+  content: "\6a";
+}
+.ico-a-porcentaje:before {
+  content: "\6b";
+}
+.ico-cm:before {
+  content: "\6c";
+}
+.ico-cm-porcentaje:before {
+  content: "\6d";
+}
+.ico-desplazar:before {
+  content: "\6e";
+}
+.ico-e:before {
+  content: "\6f";
+}
+.ico-e-porcentaje:before {
+  content: "\70";
+}
+.ico-em:before {
+  content: "\71";
+}
+.ico-j:before {
+  content: "\72";
+}
+.ico-l:before {
+  content: "\73";
+}
+.ico-l-porcentaje:before {
+  content: "\74";
+}
+.ico-mapa:before {
+  content: "\75";
+}
+.ico-s1:before {
+  content: "\76";
+}
+.ico-s1-porcentaje:before {
+  content: "\77";
+}
+.ico-s2:before {
+  content: "\78";
+}
+.ico-s2-porcentaje:before {
+  content: "\79";
+}
+.ico-s3:before {
+  content: "\7a";
+}
+.ico-s3-f-porcentaje:before {
+  content: "\41";
+}
+.ico-s3-fiscalizadores:before {
+  content: "\42";
+}
+.ico-s3-oic:before {
+  content: "\43";
+}
+.ico-s3-oic-porcentaje:before {
+  content: "\44";
+}
+.ico-s3-porcentaje:before {
+  content: "\45";
+}
+.ico-s3-t-porcentaje:before {
+  content: "\46";
+}
+.ico-s3-tribunales:before {
+  content: "\47";
+}
+.ico-s6:before {
+  content: "\48";
+}
+.ico-s6-porcentaje:before {
+  content: "\49";
+}
+.ico-0con:before {
+  content: "\4a";
+}
+.ico-t:before {
+  content: "\4b";
+}
+
+
+
+.icon {
+  color: #9d4d98;
+  overflow: hidden;
+  font-size: 24px;
+  padding: 2px;
+}
+.icon.ico-t {
+  color: #6f4168;
+}
+.icon.ico-s1, .icon.ico-s1-porcentaje {
+  color: #ef978a;
+}
+.icon.ico-s2, .icon.ico-s2-porcentaje {
+  color: #b05eab;
+}
+.icon.ico-s3, .icon.ico-s3-fiscalizadores, .icon.ico-s3-tribunales, .icon.ico-s3-oic {
+  color: #9085da;
+}
+.icon.ico-s6, .icon.ico-s6-porcentaje {
+  color: #4ca5ca;
+}
+.icon.ico-e, .icon.ico-e-porcentaje {
+  color: #b14875;
+}
+.icon.ico-l, .icon.ico-l-porcentaje {
+  color: #e5bb5f;
+}
+.icon.ico-j, .icon.ico-j-porcentaje {
+  color: #b5877a;
+}
+.icon.ico-a, .icon.ico-a-porcentaje {
+  color: #81ade1;
+}
+.icon.ico-cm, .icon.ico-cm-porcentaje {
+  color: #e087af;
+}
+.icon.ico-em, .icon.ico-em-porcentaje {
+  color: #9652ca;
+}
+

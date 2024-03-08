@@ -55,9 +55,9 @@
 }
 
 .encabezado .nav-menu p {
-  font-size: .7em;
+  font-size: 1em;
   display: inherit;
-  font-weight: 700;
+  font-weight: normal;
 }
 
 .encabezado .navbar-brand img {
@@ -77,6 +77,10 @@
 .scroll {
   max-height: 800px;
   overflow: auto;
+}
+
+.encabezado .nav-menu:hover {
+  background: azure;
 }
 
 
