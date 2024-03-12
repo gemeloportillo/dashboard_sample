@@ -38,10 +38,10 @@ table.cobertura_table td {
 }
 table.cobertura_table th {
   border-right: 0px solid #9f4e993d;
-  padding: 8px 3px;
+  padding: 0;
 }
 table.cobertura_table tbody td {
-  font-size: 13px;
+  /* font-size: 13px; */
   color: #55575A;
 }
 
@@ -51,7 +51,7 @@ table.cobertura_table tbody th {
   position: sticky;
   background: #f2e0f2;
   z-index: 4;
-  top: 45px;
+  /* top: 45px; */
 }
 
 table.cobertura_table thead th {
@@ -119,7 +119,7 @@ table.cobertura_table td.selected {
   background: #f2e0f2;
 }
 table.cobertura_table td:hover {
-  font-size: 13px;
+  /* font-size: 13px; */
   color: #fff9ff;
   background: #917089;
   cursor:pointer;
@@ -135,7 +135,7 @@ table.cobertura_table tr td:first-child {
   background: #f2e0f2;
   font-weight: 900;
   color: #9f4e99;
-  font-size: 12px;
+  /* font-size: 12px; */
   border-right: 1px solid #9f4e993d;
 }
 
@@ -203,11 +203,39 @@ background: none;
 }
 
 
+table.grafica-table th:first-child, td:first-child {
+  padding-left: 0em;
+}
+
+table.grafica-table th:last-child, td:last-child {
+  padding-right: 0em;
+}
+
 table.cobertura_table tbody tr:nth-child(even) {
   background: #F6F0F7;
 }
 
-/* ESTILO TABLA 2 */
+table.cobertura_table tbody tr th:first-child a,
+table.cobertura_table thead tr th:first-child a {
+  color: #fff;
+}
+
+table.cobertura_table tr td:first-child a {
+  color: #865c99;
+}
+
+table.cobertura_table tr td:first-child a:hover {
+  color: #f230b9;
+}
+
+
+table.cobertura_table thead tr th:first-child a:hover {
+  text-decoration: underline;
+}
+
+
+
+/**************** ESTILO TABLA 2 **********************/
 
 table {
   border-radius: 15px;
@@ -225,10 +253,3 @@ th, td {
   padding: 0;
 }
 
-table.grafica-table th:first-child, td:first-child {
-  padding-left: 0em;
-}
-
-table.grafica-table th:last-child, td:last-child {
-  padding-right: 0em;
-}
