@@ -149,6 +149,12 @@
 .ico-t:before {
   content: "\4b";
 }
+.ico-cal:before {
+  content: "\4c";
+}
+.ico-con:before {
+  content: "\4d";
+}
 
 
 
@@ -191,4 +197,9 @@
 .icon.ico-em, .icon.ico-em-porcentaje {
   color: #9652ca;
 }
-
+.icon.ico-em, .icon.ico-con {
+  color: #b763b5;
+}
+.icon.ico-em, .icon.ico-cal {
+  color: #dba435;
+}
