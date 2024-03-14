@@ -218,8 +218,8 @@
 .icon {
   color: #9d4d98;
   overflow: hidden;
-  font-size: 24px;
-  padding: 2px;
+  font-size: 20px;
+  padding: 2px 1px;
 }
 .icon.ico-t {
   color: #6f4168;
