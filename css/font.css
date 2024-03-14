@@ -38,122 +38,179 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ico-j-porcentaje:before {
+.ico-0con:before {
   content: "\61";
 }
-.ico-em-porcentaje:before {
+.ico-0con-porcentaje:before {
   content: "\62";
 }
-.ico-0con-porcentaje:before {
+.ico-1con:before {
   content: "\63";
 }
-.ico-1con:before {
+.ico-1con-porcentaje:before {
   content: "\64";
 }
-.ico-1con-porcentaje:before {
+.ico-2con:before {
   content: "\65";
 }
-.ico-2con:before {
+.ico-2con-porcentaje:before {
   content: "\66";
 }
-.ico-2con-porcentaje:before {
+.ico-3con:before {
   content: "\67";
 }
-.ico-3con:before {
+.ico-3con-porcentaje:before {
   content: "\68";
 }
-.ico-3con-porcentaje:before {
+.ico-a:before {
   content: "\69";
 }
-.ico-a:before {
+.ico-a-porcentaje:before {
   content: "\6a";
 }
-.ico-a-porcentaje:before {
+.ico-admin:before {
   content: "\6b";
 }
-.ico-cm:before {
+.ico-aprobar:before {
   content: "\6c";
 }
-.ico-cm-porcentaje:before {
+.ico-avanzar:before {
   content: "\6d";
 }
-.ico-desplazar:before {
+.ico-avanzar-ultimo:before {
   content: "\6e";
 }
-.ico-e:before {
+.ico-basura:before {
   content: "\6f";
 }
-.ico-e-porcentaje:before {
+.ico-cal:before {
   content: "\70";
 }
-.ico-em:before {
+.ico-cancelar:before {
   content: "\71";
 }
-.ico-j:before {
+.ico-cm:before {
   content: "\72";
 }
-.ico-l:before {
+.ico-cm-porcentaje:before {
   content: "\73";
 }
-.ico-l-porcentaje:before {
+.ico-con:before {
   content: "\74";
 }
-.ico-mapa:before {
+.ico-configurar:before {
   content: "\75";
 }
-.ico-s1:before {
+.ico-desplazar:before {
   content: "\76";
 }
-.ico-s1-porcentaje:before {
+.ico-e:before {
   content: "\77";
 }
-.ico-s2:before {
+.ico-e-porcentaje:before {
   content: "\78";
 }
-.ico-s2-porcentaje:before {
+.ico-editar:before {
   content: "\79";
 }
-.ico-s3:before {
+.ico-eliminar:before {
   content: "\7a";
 }
-.ico-s3-f-porcentaje:before {
+.ico-em:before {
   content: "\41";
 }
-.ico-s3-fiscalizadores:before {
+.ico-em-porcentaje:before {
   content: "\42";
 }
-.ico-s3-oic:before {
+.ico-entes:before {
   content: "\43";
 }
-.ico-s3-oic-porcentaje:before {
+.ico-j:before {
   content: "\44";
 }
-.ico-s3-porcentaje:before {
+.ico-j-porcentaje:before {
   content: "\45";
 }
-.ico-s3-t-porcentaje:before {
+.ico-l:before {
   content: "\46";
 }
-.ico-s3-tribunales:before {
+.ico-l-porcentaje:before {
   content: "\47";
 }
-.ico-s6:before {
+.ico-lupa:before {
   content: "\48";
 }
-.ico-s6-porcentaje:before {
+.ico-mapa:before {
   content: "\49";
 }
-.ico-0con:before {
+.ico-menu:before {
   content: "\4a";
 }
-.ico-t:before {
+.ico-nuevo:before {
   content: "\4b";
 }
-.ico-cal:before {
+.ico-pwd:before {
   content: "\4c";
 }
-.ico-con:before {
+.ico-regresar:before {
   content: "\4d";
+}
+.ico-s1:before {
+  content: "\4e";
+}
+.ico-s1-porcentaje:before {
+  content: "\4f";
+}
+.ico-s2:before {
+  content: "\50";
+}
+.ico-s2-porcentaje:before {
+  content: "\51";
+}
+.ico-s3:before {
+  content: "\52";
+}
+.ico-s3-f-porcentaje:before {
+  content: "\53";
+}
+.ico-s3-fiscalizadores:before {
+  content: "\54";
+}
+.ico-s3-oic:before {
+  content: "\55";
+}
+.ico-s3-oic-porcentaje:before {
+  content: "\56";
+}
+.ico-s3-porcentaje:before {
+  content: "\57";
+}
+.ico-s3-t-porcentaje:before {
+  content: "\58";
+}
+.ico-s3-tribunales:before {
+  content: "\59";
+}
+.ico-s6:before {
+  content: "\5a";
+}
+.ico-s6-porcentaje:before {
+  content: "\30";
+}
+.ico-salir:before {
+  content: "\31";
+}
+.ico-t:before {
+  content: "\32";
+}
+.ico-tabla-corta:before {
+  content: "\33";
+}
+.ico-tabla-larga:before {
+  content: "\34";
+}
+.ico-todo:before {
+  content: "\35";
 }
 
 
