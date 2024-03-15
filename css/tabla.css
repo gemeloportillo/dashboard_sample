@@ -270,6 +270,18 @@ table.cobertura_table.adm td:hover a {
   /* font-size: 13px; */
   color: #000000;
 }
+table.cobertura_table.adm thead a {
+  /* text-decoration: none; */
+  color: #f230b9;
+  /* font-weight: 800; */
+  /* background: bisque; */
+}
+table.cobertura_table.adm thead td:first-child a {
+  /* text-decoration: none; */
+  color: #f230b9;
+  /* font-weight: 800; */
+  /* background: bisque; */
+}
 
 table.cobertura_table.adm td:hover {
   /* font-size: 13px; */
