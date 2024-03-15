@@ -253,3 +253,64 @@ th, td {
   padding: 0;
 }
 
+/**************** ESTILO TABLA 3   (NO-VISIBLE) **********************/
+
+table.no-visible td {
+  padding: 10px;
+}
+
+
+/**************** ESTILO TABLA ADM  **********************/
+
+table.cobertura_table.adm td {
+  padding: 1px 5px;
+}
+
+table.cobertura_table.adm td:hover a {
+  /* font-size: 13px; */
+  color: #000000;
+}
+
+table.cobertura_table.adm td:hover {
+  /* font-size: 13px; */
+  color: #000000;
+  background: none;
+  cursor:pointer;
+}
+
+table.cobertura_table.adm tr:hover {
+  background: #f7c6ea;
+  color: black;
+}
+
+table.cobertura_table.adm tr:first-child:hover {
+  background: #f7d8ee;
+  color: black;
+
+}
+table.cobertura_table.adm tr:first-child {
+  height: 30px;
+
+}
+
+table.cobertura_table.adm tr td:first-child {
+  background: none;
+  font-weight:inherit;
+  color: inherit;
+  /* font-size: 12px; */
+  border-right: none;
+  
+}
+
+input[type=checkbox] {
+  border-radius: 0.35em;
+  width: 1.7em;
+  height: 1.7em;
+  margin-top: 2px;
+  border: 3px solid #1c7cbf;
+}
+
+input[type=checkbox]:checked {
+  border: 3px solid #865c99;
+  background-color: #865c99;
+}

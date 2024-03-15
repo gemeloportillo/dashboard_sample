@@ -5,8 +5,8 @@ table.cobertura_table thead tr:first-child th:nth-child(5),
 table.cobertura_table thead tr:nth-of-type(2) th:nth-child(4),
 table.cobertura_table thead tr:nth-of-type(2) th:nth-child(5) ,
 table.cobertura_table thead tr:nth-of-type(2) th:nth-child(6)  {
-  background: #ebe8fc;
-  display: none;
+  /*background: #ebe8fc;
+   display: none; */
 
 }
 
@@ -17,8 +17,8 @@ table.cobertura_table tbody td:nth-of-type(7),
 table.cobertura_table tbody th:nth-child(5),
 table.cobertura_table tbody th:nth-child(6),
 table.cobertura_table tbody th:nth-child(7) {
-  background: #dcd6ff;
-  display: none;
+  /*background: #dcd6ff;
+   display: none; */
 }
 
 /* COLORES TABLA Columma Estatal */
