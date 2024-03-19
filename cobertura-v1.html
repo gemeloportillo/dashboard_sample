@@ -1,0 +1,4823 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/tabla.css" rel="stylesheet">
+  <!-- <link href="css/tabla-colores.css" rel="stylesheet"> -->
+  <link href="css/grafica.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <title>COBERTURA</title>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body class="bg-light">
+
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Bienvenido</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h3>Tablero de avance en la Interconexión Nacional con la PDN</h3>
+          <hr>
+          <p>Breve introducción de los objetivos del sitio...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar pharetra elit, sit amet auctor nulla. Sed pulvinar porta porta. Aenean eget tortor mollis, egestas sapien quis, lobortis velit. </p>
+          <p>Donec justo dolor, convallis sit amet ex eu, sollicitudin semper turpis. Donec ut ultrices justo, vitae rutrum dui. Nullam eget sagittis tellus. Mauris purus lacus, dictum non elit quis, lacinia ornare ipsum. Proin hendrerit vitae felis quis lobortis.</p>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <header class="navbar navbar-expand-md bd-navbar encabezado sticky-top bg-dark flex-wrap flex-lg-wrap"
+    data-bs-theme="dark">
+    <nav class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler-PDN"
+        aria-controls="navbarToggler-PDN" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img class="logo" src="imgs/logo_pdn-transparente.svg" alt="Logo" class="d-inline-block align-text-top">
+      <div class="collapse navbar-collapse justify-content-between" id="navbarToggler-PDN">
+
+        <a class="navbar-brand mb-0 h1" href="#">
+
+          Tablero Estadístico de Cobertura Nacional de Interconexión
+        </a>
+        <div class="nav-menu">
+          <nav>
+            <ul>
+              <li><a href="ingreso.php"><img src="imgs/menu/ico_mesa-ayuda.svg" alt="PDN">
+                  <p>Ingresa a tu cuenta</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+    </nav>
+  </header>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-title-box">
+          <h4>&nbsp;</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-7">
+        <div class="card">
+          <!-- <h5 class="card-header">Cobertura Nacional de interconexión</h5> -->
+          <div class="card-body scroll">
+            <table class="cobertura_table rounded ">
+              <thead>
+                <tr>
+                  <th>
+                    <a href="ordenar_cob.php?oc=0">ENTIDAD FEDERATIVA</a>
+
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=1">
+                      <div class="icon ico-t" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Total"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=2">
+                      <div class="icon ico-s1" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes conectados Sistema de declaraciones"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=3">
+                      <div class="icon ico-s2" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Sistema de Servidores Públicos en contrataciones"></div>
+                    </a>
+                  </th>
+                  <!--                   <th>
+                    <a href="">
+                      <div class="icon ico-s3-oic"  data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" title="S3. Órganos Internos de Control"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="">
+                      <div class="icon ico-s3-fiscalizadores"  data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" title="S3. Fiscalizadores"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="">
+                      <div class="icon ico-s3-tribunales"  data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" title="S3. Tribunales"></div>
+                    </a>
+                  </th> -->
+                  <th>
+                    <a href="ordenar_cob.php?oc=4">
+                      <div class="icon ico-s6" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Sistema de Contrataciones"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=5">
+                      <div class="icon ico-0con" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes no conectados a ningún sistema"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=6">
+                      <div class="icon ico-1con" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes conectados sólo a un sistema"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=7">
+                      <div class="icon ico-2con" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes conectados a dos sistemas"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=8">
+                      <div class="icon ico-3con" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes conectadas a tres sistemas"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=9">
+                      <div class="icon ico-e" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes Estatales del ámbito Ejecutivo"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=10">
+                      <div class="icon ico-l" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes Estatales del ámbito Legislativo"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=11">
+                      <div class="icon ico-j" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes Estatales del ámbito Judicial"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=12">
+                      <div class="icon ico-a" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes Estatales de los Órganos Constitucionales Autónomos"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=13">
+                      <div class="icon ico-em" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Entes Municipales del ámbito Ejecutivo Municipal"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=14">
+                      <div class="icon ico-cm" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Cabeceras municipales"></div>
+                    </a>
+                  </th>
+
+
+
+
+
+
+
+
+                  <th>
+                    <a href="ordenar_cob.php?oc=15">
+                      <div class="icon ico-s1-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de entes conectados al S1"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=16">
+                      <div class="icon ico-s2-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de entes conectados al S2"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=17">
+                      <div class="icon ico-s6-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de entes conectados al S6"></div>
+                    </a>
+                  </th>
+
+                  <th>
+                    <a href="ordenar_cob.php?oc=18">
+                      <div class="icon ico-0con-porcentaje" data-bs-custom-class="custom-tooltip"
+                        data-bs-toggle="tooltip" title="Porcentaje de Entes no conectados  a ningún un sistema"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=19">
+                      <div class="icon ico-1con-porcentaje" data-bs-custom-class="custom-tooltip"
+                        data-bs-toggle="tooltip" title="Porcentaje de Entes conectados a un sistema"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="ordenar_cob.php?oc=20">
+                      <div class="icon ico-2con-porcentaje" data-bs-custom-class="custom-tooltip"
+                        data-bs-toggle="tooltip" title="Porcentaje de Entes conectadas a dos sistemas"></div>
+                    </a>
+                  </th>
+
+
+
+
+
+
+                  <th>
+                    <a href="ordenar_cob.php?oc=21">
+                      <div class="icon ico-3con-porcentaje" data-bs-custom-class="custom-tooltip"
+                        data-bs-toggle="tooltip" title="Porcentaje de Entes conectadas a tres sistemas"></div>
+                    </a>
+                  </th>
+
+
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=22">
+                      <div class="icon ico-e-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de Entes Estatales del ámbito Ejecutivo"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=23">
+                      <div class="icon ico-l-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de Entes Estatales del ámbito Legislativo"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=24">
+                      <div class="icon ico-j-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de Entes Estatales del ámbito Judicial"></div>
+                    </a>
+                  </th>
+                  <th class="municipal">
+                    <a href="ordenar_cob.php?oc=25">
+                      <div class="icon ico-a-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de Entes Estatales de los Órganos Constitucionales Autónomos"></div>
+                    </a>
+                  </th>
+
+
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=26">
+                      <div class="icon ico-em-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de Entes Estatales del ámbito Ejecutivo Municipal"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=27">
+                      <div class="icon ico-cm-porcentaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Porcentaje de Cabeceras Municipales"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=28">
+                      <div class="icon ico-con" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Conexiones"></div>
+                    </a>
+                  </th>
+                  <th class="estatal">
+                    <a href="ordenar_cob.php?oc=29">
+                      <div class="icon ico-cal" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                        title="Calificación"></div>
+                    </a>
+                  </th>
+
+
+
+                </tr>
+
+
+
+
+              </thead>
+              <tbody>
+
+
+                <!--Inicia segunda fila-->
+
+
+                <tr>
+                  <th>
+                    <a href='tabla_entes.php?col=1'>
+                      <div><a href='condicion_cob.php?edo_cel=33'><b>NACIONAL</b></a></div>
+                    </a>
+                  </th>
+                  <th class='bg'>
+                    <a href='tabla_entes.php?col=2'>
+                      <div>9994</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=3'>
+                      <div>154</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=4'>
+                      <div>168</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=5'>
+                      <div>122</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=6'>
+                      <div>9649</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=7'>
+                      <div>273</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=8'>
+                      <div>45</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=9'>
+                      <div>27</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=10'>
+                      <div>2246</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=11'>
+                      <div>65</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=12'>
+                      <div>203</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=13'>
+                      <div>238</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=14'>
+                      <div>7242</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=15'>
+                      <div>2479</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=16'>
+                      <div>1.54</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=17'>
+                      <div>1.68</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=18'>
+                      <div>1.22</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=19'>
+                      <div>96.55</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=20'>
+                      <div>2.73</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=21'>
+                      <div>0.45</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=22'>
+                      <div>0.27</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=23'>
+                      <div>22.47</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=24'>
+                      <div>0.65</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=25'>
+                      <div>2.03</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=26'>
+                      <div>2.38</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=27'>
+                      <div>72.46</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=28'>
+                      <div>24.8</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=29'>
+                      <div>444</div>
+                    </a>
+                  </th>
+                  <th>
+                    <a href='tabla_entes.php?col=30'>
+                      <div>4.44</div>
+                    </a>
+                  </th>
+                </tr>
+
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=3'>
+                      <div>BAJA CALIFORNIA SUR</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=3&col=2'>
+                      <div>75</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=6'>
+                      <div>75</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=10'>
+                      <div>39</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=12'>
+                      <div>9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=14'>
+                      <div>20</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=15'>
+                      <div>5</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=23'>
+                      <div>52</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=24'>
+                      <div>1.33</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=25'>
+                      <div>12</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=26'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=27'>
+                      <div>26.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=3&col=28'>
+                      <div>6.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=6'>
+                      <div>COLIMA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=6&col=2'>
+                      <div>84</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=6'>
+                      <div>84</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=10'>
+                      <div>31</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=12'>
+                      <div>9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=13'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=14'>
+                      <div>35</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=15'>
+                      <div>10</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=23'>
+                      <div>36.9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=24'>
+                      <div>1.19</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=25'>
+                      <div>10.71</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=26'>
+                      <div>9.52</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=27'>
+                      <div>41.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=6&col=28'>
+                      <div>11.9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=9'>
+                      <div>CIUDAD DE MÉXICO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=9&col=2'>
+                      <div>105</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=6'>
+                      <div>105</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=10'>
+                      <div>75</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=12'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=13'>
+                      <div>9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=14'>
+                      <div>17</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=15'>
+                      <div>16</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=23'>
+                      <div>71.43</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=24'>
+                      <div>1.9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=25'>
+                      <div>1.9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=26'>
+                      <div>8.57</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=27'>
+                      <div>16.19</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=9&col=28'>
+                      <div>15.24</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=27'>
+                      <div>TABASCO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=27&col=2'>
+                      <div>114</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=6'>
+                      <div>114</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=10'>
+                      <div>61</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=12'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=14'>
+                      <div>38</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=15'>
+                      <div>17</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=23'>
+                      <div>53.51</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=24'>
+                      <div>1.75</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=25'>
+                      <div>6.14</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=26'>
+                      <div>5.26</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=27'>
+                      <div>33.33</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=27&col=28'>
+                      <div>14.91</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=4'>
+                      <div>CAMPECHE</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=4&col=2'>
+                      <div>117</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=6'>
+                      <div>117</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=10'>
+                      <div>78</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=12'>
+                      <div>3</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=14'>
+                      <div>29</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=15'>
+                      <div>13</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=23'>
+                      <div>66.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.85
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=25'>
+                      <div>2.56</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=26'>
+                      <div>5.13</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=27'>
+                      <div>24.79</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=4&col=28'>
+                      <div>11.11</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=2'>
+                      <div>BAJA CALIFORNIA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=2&col=2'>
+                      <div>134</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=6'>
+                      <div>134</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=10'>
+                      <div>62</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=12'>
+                      <div>10</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=14'>
+                      <div>53</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=15'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=23'>
+                      <div>46.27</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=24'>
+                      <div>1.49</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=25'>
+                      <div>7.46</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=26'>
+                      <div>5.22</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=27'>
+                      <div>39.55</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=2&col=28'>
+                      <div>5.22</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=1'>
+                      <div>AGUASCALIENTES</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=1&col=2'>
+                      <div>135</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=6'>
+                      <div>135</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=10'>
+                      <div>57</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=12'>
+                      <div>3</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=14'>
+                      <div>68</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=15'>
+                      <div>11</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=23'>
+                      <div>42.22</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.74
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=25'>
+                      <div>2.22</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=26'>
+                      <div>4.44</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=27'>
+                      <div>50.37</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=1&col=28'>
+                      <div>8.15</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=18'>
+                      <div>NAYARIT</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=18&col=2'>
+                      <div>138</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=6'>
+                      <div>138</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=10'>
+                      <div>59</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=12'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=14'>
+                      <div>66</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=15'>
+                      <div>20</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=23'>
+                      <div>42.75</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=24'>
+                      <div>1.45</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=25'>
+                      <div>2.9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=26'>
+                      <div>5.07</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=27'>
+                      <div>47.83</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=18&col=28'>
+                      <div>14.49</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=23'>
+                      <div>QUINTANA ROO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=23&col=2'>
+                      <div>147</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=6'>
+                      <div>147</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=10'>
+                      <div>76</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=12'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=14'>
+                      <div>59</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=15'>
+                      <div>11</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=23'>
+                      <div>51.7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=24'>
+                      <div>1.36</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=25'>
+                      <div>2.72</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=26'>
+                      <div>4.08</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=27'>
+                      <div>40.14</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=23&col=28'>
+                      <div>7.48</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=5'>
+                      <div>COAHUILA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=5&col=2'>
+                      <div>186</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=6'>
+                      <div>186</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=10'>
+                      <div>60</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=12'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=14'>
+                      <div>110</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=15'>
+                      <div>38</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=23'>
+                      <div>32.26</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=24'>
+                      <div>1.08</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=25'>
+                      <div>3.76</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=26'>
+                      <div>3.76</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=27'>
+                      <div>59.14</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=5&col=28'>
+                      <div>20.43</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=17'>
+                      <div>MORELOS</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=17&col=2'>
+                      <div>206</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=6'>
+                      <div>206</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=10'>
+                      <div>70</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=12'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=13'>
+                      <div>9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=14'>
+                      <div>119</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=15'>
+                      <div>36</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=23'>
+                      <div>33.98</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.49
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=25'>
+                      <div>3.4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=26'>
+                      <div>4.37</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=27'>
+                      <div>57.77</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=17&col=28'>
+                      <div>17.48</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=25'>
+                      <div>SINALOA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=25&col=2'>
+                      <div>209</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=6'>
+                      <div>209</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=10'>
+                      <div>84</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=12'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=14'>
+                      <div>112</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=15'>
+                      <div>18</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=23'>
+                      <div>40.19</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.96
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=25'>
+                      <div>1.91</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=26'>
+                      <div>3.35</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=27'>
+                      <div>53.59</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=25&col=28'>
+                      <div>8.61</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=10'>
+                      <div>DURANGO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=10&col=2'>
+                      <div>221</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=6'>
+                      <div>221</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=10'>
+                      <div>51</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=11'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=12'>
+                      <div>11</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=13'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=14'>
+                      <div>147</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=15'>
+                      <div>39</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=23'>
+                      <div>23.08</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=24'>
+                      <div>1.81</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=25'>
+                      <div>4.98</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=26'>
+                      <div>3.62</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=27'>
+                      <div>66.52</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=10&col=28'>
+                      <div>17.65</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=8'>
+                      <div>CHIHUAHUA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=8&col=2'>
+                      <div>228</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=6'>
+                      <div>228</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=10'>
+                      <div>69</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=12'>
+                      <div>9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=14'>
+                      <div>142</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=15'>
+                      <div>67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=23'>
+                      <div>30.26</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.88
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=25'>
+                      <div>3.95</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=26'>
+                      <div>2.63</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=27'>
+                      <div>62.28</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=8&col=28'>
+                      <div>29.39</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=22'>
+                      <div>QUERÉTARO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=22&col=2'>
+                      <div>238</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=6'>
+                      <div>238</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=10'>
+                      <div>84</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=12'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=13'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=14'>
+                      <div>141</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=15'>
+                      <div>18</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=23'>
+                      <div>35.29</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.42
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=25'>
+                      <div>1.68</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=26'>
+                      <div>3.36</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=27'>
+                      <div>59.24</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=22&col=28'>
+                      <div>7.56</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=26'>
+                      <div>SONORA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=26&col=2'>
+                      <div>244</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=6'>
+                      <div>244</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=10'>
+                      <div>77</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=12'>
+                      <div>5</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=13'>
+                      <div>10</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=14'>
+                      <div>151</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=15'>
+                      <div>72</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=23'>
+                      <div>31.56</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.41
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=25'>
+                      <div>2.05</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=26'>
+                      <div>4.1</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=27'>
+                      <div>61.89</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=26&col=28'>
+                      <div>29.51</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=29'>
+                      <div>TLAXCALA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=29&col=2'>
+                      <div>249</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=6'>
+                      <div>249</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=10'>
+                      <div>59</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=12'>
+                      <div>18</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=14'>
+                      <div>164</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=15'>
+                      <div>60</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=23'>
+                      <div>23.69</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.8
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=25'>
+                      <div>7.23</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=26'>
+                      <div>2.41</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=27'>
+                      <div>65.86</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=29&col=28'>
+                      <div>24.1</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=28'>
+                      <div>TAMAULIPAS</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=28&col=2'>
+                      <div>251</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=6'>
+                      <div>251</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=10'>
+                      <div>54</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=12'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=14'>
+                      <div>181</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=15'>
+                      <div>43</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=23'>
+                      <div>21.51</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.8
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=25'>
+                      <div>2.79</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=26'>
+                      <div>2.79</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=27'>
+                      <div>72.11</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=28&col=28'>
+                      <div>17.13</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=11'>
+                      <div>GUANAJUATO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=11&col=2'>
+                      <div>262</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=3'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=4'>
+                      <div>19</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=5'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=6'>
+                      <div>239</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=7'>
+                      <div>18</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=8'>
+                      <div>3</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=9'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=10'>
+                      <div>79</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=12'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=14'>
+                      <div>172</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=15'>
+                      <div>46</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=16'>
+                      <div>2.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=17'>
+                      <div>7.25</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=18'>
+                      <div>1.53</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=19'>
+                      <div>91.22</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=20'>
+                      <div>6.87</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=21'>
+                      <div>1.15</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.76
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=23'>
+                      <div>30.15</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.76
+                  </td>
+                  <td align='center'>
+                    0.76
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=26'>
+                      <div>2.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=27'>
+                      <div>65.65</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=28'>
+                      <div>17.56</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=29'>
+                      <div>30</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=11&col=30'>
+                      <div>3.82</div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=32'>
+                      <div>ZACATECAS</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=32&col=2'>
+                      <div>271</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=6'>
+                      <div>271</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=10'>
+                      <div>54</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=12'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=13'>
+                      <div>9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=14'>
+                      <div>202</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=15'>
+                      <div>58</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=23'>
+                      <div>19.93</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.74
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=25'>
+                      <div>1.48</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=26'>
+                      <div>3.32</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=27'>
+                      <div>74.54</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=32&col=28'>
+                      <div>21.4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=31'>
+                      <div>YUCATÁN</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=31&col=2'>
+                      <div>273</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=3'>
+                      <div>45</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=4'>
+                      <div>16</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=5'>
+                      <div>22</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=6'>
+                      <div>206</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=7'>
+                      <div>55</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=8'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=9'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=10'>
+                      <div>68</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=12'>
+                      <div>3</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=13'>
+                      <div>16</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=14'>
+                      <div>184</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=15'>
+                      <div>107</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=16'>
+                      <div>16.48</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=17'>
+                      <div>5.86</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=18'>
+                      <div>8.06</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=19'>
+                      <div>75.46</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=20'>
+                      <div>20.15</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=21'>
+                      <div>2.93</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=22'>
+                      <div>1.47</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=23'>
+                      <div>24.91</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.73
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=25'>
+                      <div>1.1</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=26'>
+                      <div>5.86</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=27'>
+                      <div>67.4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=28'>
+                      <div>39.19</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=29'>
+                      <div>83</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=31&col=30'>
+                      <div>10.13</div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=24'>
+                      <div>SAN LUIS POTOSÍ</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=24&col=2'>
+                      <div>276</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=6'>
+                      <div>276</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=10'>
+                      <div>79</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=12'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=13'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=14'>
+                      <div>184</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=15'>
+                      <div>58</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=23'>
+                      <div>28.62</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.36
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=25'>
+                      <div>1.45</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=26'>
+                      <div>2.9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=27'>
+                      <div>66.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=24&col=28'>
+                      <div>21.01</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=16'>
+                      <div>MICHOACÁN</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=16&col=2'>
+                      <div>355</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=6'>
+                      <div>354</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=10'>
+                      <div>64</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=12'>
+                      <div>3</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=13'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=14'>
+                      <div>278</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=15'>
+                      <div>113</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0.28
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=19'>
+                      <div>99.72</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.28
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=23'>
+                      <div>18.03</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.56
+                  </td>
+                  <td align='center'>
+                    0.85
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=26'>
+                      <div>2.25</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=27'>
+                      <div>78.31</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=16&col=28'>
+                      <div>31.83</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    0.09
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=12'>
+                      <div>GUERRERO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=12&col=2'>
+                      <div>371</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=6'>
+                      <div>371</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=10'>
+                      <div>80</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=12'>
+                      <div>5</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=14'>
+                      <div>277</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=15'>
+                      <div>85</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=23'>
+                      <div>21.56</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.54
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=25'>
+                      <div>1.35</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=26'>
+                      <div>1.89</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=27'>
+                      <div>74.66</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=12&col=28'>
+                      <div>22.91</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=13'>
+                      <div>HIDALGO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=13&col=2'>
+                      <div>401</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=6'>
+                      <div>401</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=10'>
+                      <div>86</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=11'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=12'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=13'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=14'>
+                      <div>299</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=15'>
+                      <div>84</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=23'>
+                      <div>21.45</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=24'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=27'>
+                      <div>74.56</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=13&col=28'>
+                      <div>20.95</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=19'>
+                      <div>NUEVO LEÓN</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=19&col=2'>
+                      <div>446</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=6'>
+                      <div>446</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=10'>
+                      <div>90</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=12'>
+                      <div>21</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=13'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=14'>
+                      <div>327</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=15'>
+                      <div>51</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=23'>
+                      <div>20.18</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.45
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=25'>
+                      <div>4.71</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=26'>
+                      <div>1.35</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=27'>
+                      <div>73.32</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=19&col=28'>
+                      <div>11.43</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=7'>
+                      <div>CHIAPAS</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=7&col=2'>
+                      <div>469</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=3'>
+                      <div>94</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=4'>
+                      <div>125</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=5'>
+                      <div>88</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=6'>
+                      <div>224</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=7'>
+                      <div>198</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=8'>
+                      <div>32</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=9'>
+                      <div>15</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=10'>
+                      <div>70</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=12'>
+                      <div>3</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=13'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=14'>
+                      <div>386</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=15'>
+                      <div>125</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=16'>
+                      <div>20.04</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=17'>
+                      <div>26.65</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=18'>
+                      <div>18.76</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=19'>
+                      <div>47.76</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=20'>
+                      <div>42.22</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=21'>
+                      <div>6.82</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=22'>
+                      <div>3.2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=23'>
+                      <div>14.93</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.43
+                  </td>
+                  <td align='center'>
+                    0.64
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=26'>
+                      <div>1.71</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=27'>
+                      <div>82.3</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=28'>
+                      <div>26.65</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=29'>
+                      <div>307</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=7&col=30'>
+                      <div>21.82</div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=14'>
+                      <div>JALISCO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=14&col=2'>
+                      <div>511</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=3'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=4'>
+                      <div>8</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=5'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=6'>
+                      <div>502</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=8'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=9'>
+                      <div>6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=10'>
+                      <div>85</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=11'>
+                      <div>4</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=12'>
+                      <div>10</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=13'>
+                      <div>5</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=14'>
+                      <div>407</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=15'>
+                      <div>127</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=16'>
+                      <div>1.57</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=17'>
+                      <div>1.57</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=18'>
+                      <div>1.37</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=19'>
+                      <div>98.24</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.2
+                  </td>
+                  <td align='center'>
+                    0.39
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=22'>
+                      <div>1.17</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=23'>
+                      <div>16.63</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.78
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=25'>
+                      <div>1.96</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.98
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=27'>
+                      <div>79.65</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=28'>
+                      <div>24.85</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=29'>
+                      <div>23</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=14&col=30'>
+                      <div>1.5</div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=21'>
+                      <div>PUEBLA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=21&col=2'>
+                      <div>647</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=6'>
+                      <div>647</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=10'>
+                      <div>82</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=12'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=13'>
+                      <div>5</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=14'>
+                      <div>551</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=15'>
+                      <div>217</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=23'>
+                      <div>12.67</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.31
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=25'>
+                      <div>1.08</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.77
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=27'>
+                      <div>85.16</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=21&col=28'>
+                      <div>33.54</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=15'>
+                      <div>EDO. DE MÉXICO</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=15&col=2'>
+                      <div>661</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=6'>
+                      <div>661</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=10'>
+                      <div>106</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=12'>
+                      <div>5</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=13'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=14'>
+                      <div>541</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=15'>
+                      <div>125</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=23'>
+                      <div>16.04</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.3
+                  </td>
+                  <td align='center'>
+                    0.76
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=26'>
+                      <div>1.06</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=27'>
+                      <div>81.85</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=15&col=28'>
+                      <div>18.91</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=30'>
+                      <div>VERACRUZ</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=30&col=2'>
+                      <div>682</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=6'>
+                      <div>682</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=10'>
+                      <div>72</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    1
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=12'>
+                      <div>7</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=13'>
+                      <div>9</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=14'>
+                      <div>593</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=15'>
+                      <div>212</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=23'>
+                      <div>10.56</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.15
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=25'>
+                      <div>1.03</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=26'>
+                      <div>1.32</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=27'>
+                      <div>86.95</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=30&col=28'>
+                      <div>31.09</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+                <tr>
+                  <td align='center'>
+                    <a href='condicion_cob.php?edo_cel=20'>
+                      <div>OAXACA</div>
+                    </a>
+                  </td>
+                  <td class='bg'>
+                    <a href='tabla_entes.php?id_edo=20&col=2'>
+                      <div>1288</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=6'>
+                      <div>1288</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=10'>
+                      <div>85</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=11'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=12'>
+                      <div>2</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=13'>
+                      <div>10</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=14'>
+                      <div>1189</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=15'>
+                      <div>570</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=19'>
+                      <div>100</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=23'>
+                      <div>6.6</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0.16
+                  </td>
+                  <td align='center'>
+                    0.16
+                  </td>
+                  <td align='center'>
+                    0.78
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=27'>
+                      <div>92.31</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    <a href='tabla_entes.php?id_edo=20&col=28'>
+                      <div>44.25</div>
+                    </a>
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                  <td align='center'>
+                    0
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <!-- <div class="card-footer">
+            Actualizado al 4 de marzo de 2024
+          </div> -->
+        </div>
+      </div>
+
+
+
+      <div class="col-5">
+
+        <!-- <h5 class="card-header">Gráfica</h5> -->
+
+
+        <div class='card'>
+          <div class='card-body'>
+            <p>Haz clic en la gráfica para consultar el detalle</p>
+            <table class="grafica_table">
+              <tbody>
+                <tr>
+                  <td colspan="32" class="enca">
+                    ENTES </td>
+                </tr>
+
+
+
+                <tr>
+                  <td align='center' style='vertical-align: bottom;'>75
+                    <a href='tabla_entes.php?id_edo=3&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='BAJA CALIFORNIA SUR&#13ENTES = 75'><img
+                        src='imgs/pix_amarillo.png' alt='la entidad' height='23'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>84
+                    <a href='tabla_entes.php?id_edo=6&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='COLIMA&#13ENTES = 84'><img src='imgs/pix_azul.png'
+                        alt='la entidad' height='26'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>105
+                    <a href='tabla_entes.php?id_edo=9&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='CIUDAD DE MÉXICO&#13ENTES = 105'><img src='imgs/pix_naranja.png'
+                        alt='la entidad' height='33'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>114
+                    <a href='tabla_entes.php?id_edo=27&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='TABASCO&#13ENTES = 114'><img src='imgs/pix_rojo.png'
+                        alt='la entidad' height='35'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>117
+                    <a href='tabla_entes.php?id_edo=4&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='CAMPECHE&#13ENTES = 117'><img src='imgs/pix_verde.png'
+                        alt='la entidad' height='36'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>134
+                    <a href='tabla_entes.php?id_edo=2&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='BAJA CALIFORNIA&#13ENTES = 134'><img src='imgs/pix_violeta.png'
+                        alt='la entidad' height='42'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>135
+                    <a href='tabla_entes.php?id_edo=1&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='AGUASCALIENTES&#13ENTES = 135'><img src='imgs/pix_cian.png'
+                        alt='la entidad' height='42'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>138
+                    <a href='tabla_entes.php?id_edo=18&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='NAYARIT&#13ENTES = 138'><img src='imgs/pix_amarillo.png'
+                        alt='la entidad' height='43'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>147
+                    <a href='tabla_entes.php?id_edo=23&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='QUINTANA ROO&#13ENTES = 147'><img src='imgs/pix_azul.png'
+                        alt='la entidad' height='46'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>186
+                    <a href='tabla_entes.php?id_edo=5&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='COAHUILA&#13ENTES = 186'><img src='imgs/pix_naranja.png'
+                        alt='la entidad' height='58'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>206
+                    <a href='tabla_entes.php?id_edo=17&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='MORELOS&#13ENTES = 206'><img src='imgs/pix_rojo.png'
+                        alt='la entidad' height='64'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>209
+                    <a href='tabla_entes.php?id_edo=25&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='SINALOA&#13ENTES = 209'><img src='imgs/pix_verde.png'
+                        alt='la entidad' height='65'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>221
+                    <a href='tabla_entes.php?id_edo=10&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='DURANGO&#13ENTES = 221'><img src='imgs/pix_violeta.png'
+                        alt='la entidad' height='69'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>228
+                    <a href='tabla_entes.php?id_edo=8&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='CHIHUAHUA&#13ENTES = 228'><img src='imgs/pix_cian.png'
+                        alt='la entidad' height='71'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>238
+                    <a href='tabla_entes.php?id_edo=22&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='QUERÉTARO&#13ENTES = 238'><img src='imgs/pix_amarillo.png'
+                        alt='la entidad' height='74'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>244
+                    <a href='tabla_entes.php?id_edo=26&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='SONORA&#13ENTES = 244'><img src='imgs/pix_azul.png'
+                        alt='la entidad' height='76'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>249
+                    <a href='tabla_entes.php?id_edo=29&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='TLAXCALA&#13ENTES = 249'><img src='imgs/pix_naranja.png'
+                        alt='la entidad' height='77'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>251
+                    <a href='tabla_entes.php?id_edo=28&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='TAMAULIPAS&#13ENTES = 251'><img src='imgs/pix_rojo.png'
+                        alt='la entidad' height='78'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>262
+                    <a href='tabla_entes.php?id_edo=11&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='GUANAJUATO&#13ENTES = 262'><img src='imgs/pix_verde.png'
+                        alt='la entidad' height='81'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>271
+                    <a href='tabla_entes.php?id_edo=32&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='ZACATECAS&#13ENTES = 271'><img src='imgs/pix_violeta.png'
+                        alt='la entidad' height='84'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>273
+                    <a href='tabla_entes.php?id_edo=31&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='YUCATÁN&#13ENTES = 273'><img src='imgs/pix_cian.png'
+                        alt='la entidad' height='85'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>276
+                    <a href='tabla_entes.php?id_edo=24&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='SAN LUIS POTOSÍ&#13ENTES = 276'><img src='imgs/pix_amarillo.png'
+                        alt='la entidad' height='86'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>355
+                    <a href='tabla_entes.php?id_edo=16&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='MICHOACÁN&#13ENTES = 355'><img src='imgs/pix_azul.png'
+                        alt='la entidad' height='110'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>371
+                    <a href='tabla_entes.php?id_edo=12&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='GUERRERO&#13ENTES = 371'><img src='imgs/pix_naranja.png'
+                        alt='la entidad' height='115'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>401
+                    <a href='tabla_entes.php?id_edo=13&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='HIDALGO&#13ENTES = 401'><img src='imgs/pix_rojo.png'
+                        alt='la entidad' height='125'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>446
+                    <a href='tabla_entes.php?id_edo=19&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='NUEVO LEÓN&#13ENTES = 446'><img src='imgs/pix_verde.png'
+                        alt='la entidad' height='139'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>469
+                    <a href='tabla_entes.php?id_edo=7&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='CHIAPAS&#13ENTES = 469'><img src='imgs/pix_violeta.png'
+                        alt='la entidad' height='146'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>511
+                    <a href='tabla_entes.php?id_edo=14&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='JALISCO&#13ENTES = 511'><img src='imgs/pix_cian.png'
+                        alt='la entidad' height='159'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>647
+                    <a href='tabla_entes.php?id_edo=21&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='PUEBLA&#13ENTES = 647'><img src='imgs/pix_amarillo.png'
+                        alt='la entidad' height='201'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>661
+                    <a href='tabla_entes.php?id_edo=15&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='EDO. DE MÉXICO&#13ENTES = 661'><img src='imgs/pix_azul.png'
+                        alt='la entidad' height='205'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>682
+                    <a href='tabla_entes.php?id_edo=30&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='VERACRUZ&#13ENTES = 682'><img src='imgs/pix_naranja.png'
+                        alt='la entidad' height='212'></a>
+                  </td>
+                  <td align='center' style='vertical-align: bottom;'>1288
+                    <a href='tabla_entes.php?id_edo=20&col=2' data-bs-custom-class='custom-tooltip'
+                      data-bs-toggle='tooltip' title='OAXACA&#13ENTES = 1288'><img src='imgs/pix_rojo.png'
+                        alt='la entidad' height='300'></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class='vertical'>
+                    BAJA CALIFORNIA SUR
+                  </td>
+                  <td class='vertical'>
+                    COLIMA
+                  </td>
+                  <td class='vertical'>
+                    CIUDAD DE MÉXICO
+                  </td>
+                  <td class='vertical'>
+                    TABASCO
+                  </td>
+                  <td class='vertical'>
+                    CAMPECHE
+                  </td>
+                  <td class='vertical'>
+                    BAJA CALIFORNIA
+                  </td>
+                  <td class='vertical'>
+                    AGUASCALIENTES
+                  </td>
+                  <td class='vertical'>
+                    NAYARIT
+                  </td>
+                  <td class='vertical'>
+                    QUINTANA ROO
+                  </td>
+                  <td class='vertical'>
+                    COAHUILA
+                  </td>
+                  <td class='vertical'>
+                    MORELOS
+                  </td>
+                  <td class='vertical'>
+                    SINALOA
+                  </td>
+                  <td class='vertical'>
+                    DURANGO
+                  </td>
+                  <td class='vertical'>
+                    CHIHUAHUA
+                  </td>
+                  <td class='vertical'>
+                    QUERÉTARO
+                  </td>
+                  <td class='vertical'>
+                    SONORA
+                  </td>
+                  <td class='vertical'>
+                    TLAXCALA
+                  </td>
+                  <td class='vertical'>
+                    TAMAULIPAS
+                  </td>
+                  <td class='vertical'>
+                    GUANAJUATO
+                  </td>
+                  <td class='vertical'>
+                    ZACATECAS
+                  </td>
+                  <td class='vertical'>
+                    YUCATÁN
+                  </td>
+                  <td class='vertical'>
+                    SAN LUIS POTOSÍ
+                  </td>
+                  <td class='vertical'>
+                    MICHOACÁN
+                  </td>
+                  <td class='vertical'>
+                    GUERRERO
+                  </td>
+                  <td class='vertical'>
+                    HIDALGO
+                  </td>
+                  <td class='vertical'>
+                    NUEVO LEÓN
+                  </td>
+                  <td class='vertical'>
+                    CHIAPAS
+                  </td>
+                  <td class='vertical'>
+                    JALISCO
+                  </td>
+                  <td class='vertical'>
+                    PUEBLA
+                  </td>
+                  <td class='vertical'>
+                    EDO. DE MÉXICO
+                  </td>
+                  <td class='vertical'>
+                    VERACRUZ
+                  </td>
+                  <td class='vertical'>
+                    OAXACA
+                  </td>
+                </tr>
+                <tr>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+  </script>
+
+<script>
+  var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+  myModal.show()
+  </script>
+
+
+</body>
+
+</html>
